@@ -14,6 +14,7 @@
 
 body{
   font-size: 1.6rem;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 
 a{
@@ -33,11 +34,33 @@ li{
   background-color: #333333;
   color: var(--texto-menus);
   padding: 0.8rem;
+  cursor: pointer;
 }
 
 #menu-top-list{
   display: flex;
   justify-content: space-around;
+  width: 100%;
+}
+
+#menu-top ul{
+  width: 120rem;
+  margin: 0 auto;
+}
+
+#menu-top-list a{
+  display: flex;
+  width: 11rem;
+  margin: 0 auto;
+}
+
+#menu-top-list img:hover{
+  color: #333333;
+}
+
+#menu-top-list a:hover{
+  background-color: #F8F8F8;
+  color: #333333;
 }
 
 #contact{
@@ -68,6 +91,19 @@ li{
   justify-content: space-around;
 }
 
+#menu-list ul{
+  width: 120rem;
+  margin: 0 auto;
+}
+
+#menu-list a{
+  font-size: 1.2rem;
+}
+
+#menu-list a:hover{
+  text-decoration: underline;
+}
+
 /* Slider */
 
 #slider{
@@ -75,10 +111,11 @@ li{
 }
 
 #slider img{
+  width: 120rem;
   margin: 0 auto;
 }
 
-/* Box */
+/* Box 01*/
 
 .box-01{
   display: flex;
@@ -88,7 +125,7 @@ li{
   width: 120rem;
 }
 
-.item{
+.box-01 .item{
   display: flex;
   flex-direction: column;
   width: 22rem;
@@ -96,19 +133,159 @@ li{
   margin: 0 auto;
 }
 
-.img{
+.box-01 .item .img{
   border: 2px solid #DDDDDD;
   width: 22rem;
   padding: 2.4rem;
-  margin: 0 auto;;
-  overflow: hidden;
+  margin: 0 auto;
+  cursor: pointer;
 }
 
-.titulo{
+.box-01 .item .img:hover{
+  border: 1px solid #713d19;
+}
+
+.box-01 .item .titulo{
   color: var(--texto-titulos);
   margin: 2rem 0;
 }
 
-.conteudo{
+.box-01 .item .conteudo{
   color: var(--texto-conteudos);
+}
+
+/* Box 02 */
+
+.box-02-total{
+  display: flex;
+  background: url(https://www.projetoweb.com.br/sites-padrao-prontos-simples-baratos-lancamentos/padrao3-programado/template/pw-images/fundo-box-02.jpg);
+}
+
+.box-02{
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  gap: 10rem;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+.box-02 .item{
+  margin: 2rem 0;
+}
+
+.box-02 .titulo{
+  color: #F8F8F8;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.box-02 .item .conteudo{
+  background: #F8F8F8;
+  color: #666666;
+  font-size: 2rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.box-02 .entrar{
+  float: left;
+  font-size: 2rem;
+  color: #F8F8F8;
+  border: 2px solid #F8F8F8;
+  padding: 1.5rem 3rem;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.box-02 .item:last-child .entrar{
+  float: right;
+  font-size: 2rem;
+  color: #F8F8F8;
+  border: 2px solid #F8F8F8;
+  padding: 1.5rem 3rem;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.box-02 .entrar:hover{
+  background-color: #F8F8F8;
+  color: #333333;
+}
+
+/* Box 03 */
+.box-03-total{
+  background: url(https://www.projetoweb.com.br/sites-padrao-prontos-simples-baratos-lancamentos/padrao3-programado/template/pw-images/bg-tudo2.png) #333333;
+  padding: 4rem 0;
+}
+
+.box-03 .titulo{
+  font-size: 4rem;
+  color: #F8F8F8;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.form{
+  width: 80rem;
+  margin: 0 auto;
+}
+
+.box-03 .box{
+  display: flex;
+  background-color: #FFFFFF;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  box-shadow: 0.3rem 0.3rem 0.3rem -.01rem #222;
+}
+
+.box-03 .item{
+  display: grid;
+  flex-direction: column;
+  width: 48%;
+}
+
+.box-03 .item input{
+  background-color: #F5F5F5;
+  border: 1px solid #CCCCCC;
+  font-size: 1.8rem;
+  color: #999999;
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+}
+
+.box-03 .item textarea{
+  background-color: #F5F5F5;
+  border: 1px solid #CCCCCC;
+  font-size: 1.8rem;
+  color: #999999;
+  padding: 1.5rem 2rem;
+  resize: none;
+  grid-template-columns: 3fr;
+}
+
+.box-03 .captcha-enviar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.box-03 .captcha{
+  margin: 0 auto;
+  background-color: #F5F5F5;
+  padding: 1.5rem 2rem;
+  font-size: 2rem;
+}
+
+.box-03 .submit{
+  width: 30rem;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  font-size: 2rem;
+  background-color: #743d19;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  box-shadow: .3rem .3rem .3rem -.1rem #222;
 }
